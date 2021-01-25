@@ -1,5 +1,7 @@
 // Main JavaScript File
+/*--------------------------*/
 
+//01. Accesse HTML file elements in javaScript
 var authorBox = document.getElementsByTagName('article');
 for(var i = 0; i < authorBox.length; i++){
     var element = authorBox[i];
@@ -17,4 +19,10 @@ for(var i = 0; i < authorContainer.length; i++){
     // element2.style.flexWrap = 'nowrap';
 }
 
+//02. Insert HTML elements in javaScript
+var ul = document.getElementById('gift-list');
+var li = document.createElement('li');
+li.innerHTML = 'Brand New Gift';
+ul.appendChild(li);
 
+//03 
