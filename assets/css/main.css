@@ -1,0 +1,45 @@
+h1{font-size: 16px;}
+
+
+
+
+/* 02. Add Style In Javascript  */
+/*-------------------------------------*/
+.para-style{
+    color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* 03. Javascript Add Event Style */
+/*-------------------------------------*/
+.my-style{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    background: red;
+    cursor: pointer;
+}
+
+
+/* 05+06. Javascript Audio & Animation */
+/*-------------------------------------*/
+.audioButton{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+/* 02 */
+.anim{
+    box-shadow: 5px 5px 5px 0 red;
+    opacity: 0.5;
+}
+
+
+/* 08. Javascript Audio & Animation */
+/*-------------------------------------*/
+
+
+
+
