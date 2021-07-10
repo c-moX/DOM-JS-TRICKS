@@ -16,23 +16,23 @@ var count = 0;
 function next() {
     count++;
 
-    if(count>=photos.length){
+    if (count >= photos.length) {
         count = 0;
         imageTag.src = photos[count];
-    }else{
+    } else {
         imageTag.src = photos[count];
     }
-    
+
 }
 
 // For Button Previous //
 function prev() {
     count--;
 
-    if( count < 0 ){
+    if (count < 0) {
         count = photos.length - 1;
         imageTag.src = photos[count];
-    }else{
+    } else {
         imageTag.src = photos[count];
     }
 }
@@ -59,7 +59,7 @@ function removeStyle() {
 //---------------------------------------//
 var myVar = document.querySelector(".addEvent");
 //-----01
-myVar.addEventListener("mouseover", function (){
+myVar.addEventListener("mouseover", function () {
     myVar.classList.add("my-style");
 });
 //----------02
@@ -68,7 +68,7 @@ function texy() {
     myVar.classList.remove("my-style");
 }
 //-----------------03
-myVar.addEventListener("click", function (){
+myVar.addEventListener("click", function () {
     alert("Hello");
 });
 
@@ -78,7 +78,7 @@ myVar.addEventListener("click", function (){
 //---------------------------------------//
 var len = document.querySelectorAll(".myButton").length;
 
-for(var i = 0; i < len; i++){
+for (var i = 0; i < len; i++) {
     document.querySelectorAll(".myButton")[i].addEventListener("click", function () {
 
         var text = this.innerHTML;
@@ -90,7 +90,7 @@ for(var i = 0; i < len; i++){
 
 // 05.Javascript Add Audio Play//
 //---------------------------------------//
-for(var i = 0; i < 3; i++) {
+for (var i = 0; i < 3; i++) {
     document.querySelectorAll(".audioButton")[i].addEventListener("click", function () {
         var text = this.innerHTML;
         console.log(text);
@@ -106,7 +106,7 @@ function audioPlay(text) {
             var audio = new Audio("sounds/a.mp3");
             audio.play();
             break;
-            
+
         case "b":
             var audio = new Audio("sounds/b.mp3");
             audio.play();
@@ -125,7 +125,7 @@ function playAnimation(text) {
     var selectedButton = document.querySelector("." + text);
     selectedButton.classList.add("anim");
 
-    setTimeout(function() {
+    setTimeout(function () {
         selectedButton.classList.remove("anim");
 
     }, 1000);
@@ -136,7 +136,7 @@ function playAnimation(text) {
 // 07.Javascript Keypress And Counting //
 //------------------------------------------//
 var count = 0;
-document.querySelector("#textArea").addEventListener("keypress", function(event) {
+document.querySelector("#textArea").addEventListener("keypress", function (event) {
     count++;
     var text = event.key;
 
@@ -147,21 +147,3 @@ document.querySelector("#textArea").addEventListener("keypress", function(event)
 
 // 08.Javascript Keypress And Counting //
 //------------------------------------------//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
